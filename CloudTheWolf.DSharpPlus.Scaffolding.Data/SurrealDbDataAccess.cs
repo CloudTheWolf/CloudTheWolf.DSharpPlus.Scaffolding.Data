@@ -15,7 +15,7 @@ namespace CloudTheWolf.DSharpPlus.Scaffolding.Data
     using SurrealDb.Net;
     using SurrealDb.Net.Models.Auth;
 
-    internal class SurrealDbDataAccess : DataAccess
+    public class SurrealDbDataAccess : DataAccess
     {
         private static SurrealDbClient _db;
 
