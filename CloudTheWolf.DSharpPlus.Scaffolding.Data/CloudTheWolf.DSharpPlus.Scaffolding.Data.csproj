@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net6.0;net8.0</TargetFrameworks>
+    <TargetFramework>net8.0</TargetFramework>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Authors>CloudTheWolf</Authors>
@@ -18,13 +18,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Azure.Identity" Version="1.11.0" />
-    <PackageReference Include="CloudTheWolf.DSharpPlus.Scaffolding.Logging" Version="2.1.0.4" />
-    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.0" />
-    <PackageReference Include="MySqlConnector" Version="2.3.6" />
+    <PackageReference Include="Azure.Identity" Version="1.12.0" />
+    <PackageReference Include="CloudTheWolf.DSharpPlus.Scaffolding.Logging" Version="3.0.0" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.1" />
+    <PackageReference Include="MySqlConnector" Version="2.3.7" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-    <PackageReference Include="SurrealDb.Net" Version="0.5.0" />
-    <PackageReference Include="SurrealDb.Reactive" Version="0.5.0" />
+    <PackageReference Include="SurrealDb.Net" Version="0.5.1" />
+    <PackageReference Include="SurrealDb.Reactive" Version="0.5.1" />
   </ItemGroup>
 
   <ItemGroup>
