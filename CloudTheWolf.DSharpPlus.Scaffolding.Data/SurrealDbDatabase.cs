@@ -11,21 +11,21 @@ namespace CloudTheWolf.DSharpPlus.Scaffolding.Data
     {
         private readonly SurrealDbClient _client;
 
-        public SurrealDbDatabase(string serverUrl, string username, string password)
+        public SurrealDbDatabase(string serverUrl, string username, string password,string ns, string db)
         {
             var auth = new SurrealDb.Net.Models.Auth.RootAuth() 
             { 
                 Username = username, 
-                Password = password 
+                Password = password,                
             };
             _client = new SurrealDbClient(serverUrl);
             _client.SignIn(auth).Wait();
+            _client.Use(ns, db).Wait();
         }
 
         public IEnumerable<dynamic> Query(string sql, object param = null)
         {
-            
-            throw new NotImplementedException();
+            return (IEnumerable<dynamic>)this._client.RawQuery(sql, (IReadOnlyDictionary<string, object>)param);
         }
 
         public int Execute(string sql, object param = null)
