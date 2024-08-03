@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using SurrealDb.Net;
+using CloudTheWolf.DSharpPlus.Scaffolding.Logging;
+using Microsoft.Extensions.Logging;
 
 namespace CloudTheWolf.DSharpPlus.Scaffolding.Data
 {
@@ -37,7 +36,7 @@ namespace CloudTheWolf.DSharpPlus.Scaffolding.Data
             }
             catch (Exception ex)
             {
-                Logging.Logger.Log.Error(ex.Message);
+                Logger.Log.LogError(ex.Message);
                 return 0;
             }
             
