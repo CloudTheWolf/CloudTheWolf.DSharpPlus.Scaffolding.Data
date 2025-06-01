@@ -6,7 +6,7 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Authors>CloudTheWolf</Authors>
     <Product>$(SolutionName)</Product>
-    <Copyright>© 2021 CloudTheWolf Ltd</Copyright>
+    <Copyright>© 2021 CloudTheWolf</Copyright>
     <Description>Database System for CloudTheWolf.DSharpPlus.Scaffolding</Description>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -18,16 +18,16 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="CloudTheWolf.DSharpPlus.Scaffolding.Logging" Version="3.0.0.5" />
+    <PackageReference Include="CloudTheWolf.DSharpPlus.Scaffolding.Logging" Version="3.0.0.6" />
     <PackageReference Include="Dapper" Version="2.1.66" />
-    <PackageReference Include="Microsoft.Data.SqlClient" Version="6.0.1" />
-    <PackageReference Include="Microsoft.Data.Sqlite" Version="9.0.1" />
-    <PackageReference Include="MySql.Data" Version="9.2.0" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="6.0.2" />
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="9.0.5" />
+    <PackageReference Include="MySql.Data" Version="9.3.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-    <PackageReference Include="Npgsql" Version="9.0.2" />
+    <PackageReference Include="Npgsql" Version="9.0.3" />
     <PackageReference Include="SurrealDB.Models" Version="1.0.8" />
-    <PackageReference Include="SurrealDb.Net" Version="0.7.0" />
-    <PackageReference Include="SurrealDb.Reactive" Version="0.7.0" />
+    <PackageReference Include="SurrealDb.Net" Version="0.8.0" />
+    <PackageReference Include="SurrealDb.Reactive" Version="0.8.0" />
   </ItemGroup>
 
   <ItemGroup>
