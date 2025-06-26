@@ -18,7 +18,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="CloudTheWolf.DSharpPlus.Scaffolding.Logging" Version="3.0.0.6" />
+    <PackageReference Include="CloudTheWolf.DSharpPlus.Scaffolding.Logging" Version="3.0.0.7" />
     <PackageReference Include="Dapper" Version="2.1.66" />
     <PackageReference Include="Microsoft.Data.SqlClient" Version="6.0.2" />
     <PackageReference Include="Microsoft.Data.Sqlite" Version="9.0.6" />
